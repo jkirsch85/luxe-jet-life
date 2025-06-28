@@ -1,20 +1,28 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
-}
-
-.site-title {
-  font-size: 2rem;
-  font-weight: 700;
+  background-color: #ffffff;
   color: #1a1a1a;
-  margin: 0;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
-/* Navigation Bar Styles */
+/* Layout Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header / Nav Bar */
 .site-header {
-  background-color: #fff;
+  background-color: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   position: sticky;
   top: 0;
@@ -31,7 +39,7 @@ body {
 }
 
 .logo a {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: bold;
   color: #1a1a1a;
   text-decoration: none;
@@ -54,44 +62,93 @@ body {
 }
 
 .main-nav a:hover {
-  color: #6366f1; /* Indigo-500 for hover effect */
+  color: #6366f1;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Homepage Sections */
+.homepage-intro {
+  text-align: center;
+  padding: 4rem 2rem 2rem 2rem;
 }
-.brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #212529;
+
+.homepage-intro h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  padding: 0;
-  margin: 0;
+
+.homepage-intro p {
+  font-size: 1.125rem;
+  color: #555;
 }
-.nav-links li a {
-  text-decoration: none;
-  font-weight: 500;
-  color: #0077cc;
-}
-.nav-links li a:hover {
-  text-decoration: underline;
-}
-.container {
-  max-width: 960px;
-  margin: auto;
+
+.homepage-nav {
+  text-align: center;
   padding: 2rem;
 }
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.875rem;
-  color: #666;
-  border-top: 1px solid #ddd;
-  margin-top: 3rem;
+
+.homepage-nav h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
+
+.homepage-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.homepage-nav li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #1a1a1a;
+  transition: color 0.3s ease;
+}
+
+.homepage-nav li a:hover {
+  color: #6366f1;
+}
+
+/* Featured Articles */
+.homepage-featured {
+  padding: 2rem;
+}
+
+.homepage-featured h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.homepage-featured ul {
+  list-style: none;
+  padding: 0;
+}
+
+.homepage-featured li {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+}
+
+/* Utility */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
