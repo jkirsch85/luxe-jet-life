@@ -1,5 +1,17 @@
 <header class="site-header">
-  <div class="header-inner">
-    <h1 class="site-title">{{ .Site.Title }}</h1>
+  <div class="nav-container">
+    <div class="logo">
+      <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="{{ "posts/" | relURL }}">Blog</a></li>
+        <li><a href="{{ "airlines/" | relURL }}">Airlines</a></li>
+        <li><a href="{{ "hotels/" | relURL }}">Hotels</a></li>
+        <li><a href="{{ "attractions/" | relURL }}">Attractions</a></li>
+        <li><a href="{{ "deals/" | relURL }}">Deals</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
+
