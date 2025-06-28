@@ -1,0 +1,8 @@
+
+name = "Luxe Jet Life Custom Theme"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "Professional theme for a luxury travel site with navigation"
+homepage = "https://jkirsch85.github.io/luxe-jet-life/"
+tags = ["luxury", "travel", "elegant", "minimal"]
+min_version = "0.85.0"
