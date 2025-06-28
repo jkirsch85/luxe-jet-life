@@ -1,12 +1,13 @@
 {{ define "main" }}
-<main>
+<main style="padding: 2rem; font-family: sans-serif;">
   <h1>{{ .Title }}</h1>
   <p>Welcome to Luxe Jet Life — your guide to elite travel, flights, hotels, and more.</p>
 
   <ul>
     {{ range .Site.RegularPages }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Summary }}
+      <li style="margin: 10px 0;">
+        <a href="{{ .RelPermalink }}" style="font-weight: bold;">{{ .Title }}</a><br />
+        <span>{{ .Summary }}</span>
       </li>
     {{ end }}
   </ul>
