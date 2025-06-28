@@ -45,6 +45,31 @@ body {
   text-decoration: none;
 }
 
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.main-nav-list li {
+  display: inline;
+}
+
+.main-nav-list a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav-list a:hover {
+  color: #6366f1;
+}
+
 .main-nav ul,
 .nav-list {
   list-style: none;
