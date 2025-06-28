@@ -1,4 +1,4 @@
 baseURL = "https://jkirsch85.github.io/luxe-jet-life/"
 languageCode = "en-us"
 title = "Luxe Jet Life"
-theme = "luxe_jet_life_custom_theme"
+theme = "luxe_jet_life_modern_theme"

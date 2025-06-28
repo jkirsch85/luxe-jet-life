@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main>
+  <section class="hero">
+    <h1>Welcome to Luxe Jet Life</h1>
+    <p>Explore premium travel destinations, luxury airlines, and elite gear.</p>
+  </section>
+  <section class="grid">
+    {{ range .Site.RegularPages }}
+    <article>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p>{{ .Summary }}</p>
+    </article>
+    {{ end }}
+  </section>
+</main>
+{{ end }}
