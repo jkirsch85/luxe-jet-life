@@ -4,11 +4,21 @@ body {
   background-color: #f8f9fa;
   color: #212529;
 }
-header {
+.site-header {
   background-color: #ffffff;
-  padding: 1.5rem 2rem;
-  border-bottom: 1px solid #ddd;
+  padding: 1.5rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-bottom: 1px solid #eee;
 }
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
