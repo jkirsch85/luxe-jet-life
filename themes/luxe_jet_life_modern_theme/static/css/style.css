@@ -4,19 +4,57 @@ body {
   background-color: #f8f9fa;
   color: #212529;
 }
-.site-header {
-  background-color: #ffffff;
-  padding: 1.5rem 0;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  border-bottom: 1px solid #eee;
-}
 
 .site-title {
   font-size: 2rem;
   font-weight: 700;
   color: #1a1a1a;
   margin: 0;
+}
+
+/* Navigation Bar Styles */
+.site-header {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #6366f1; /* Indigo-500 for hover effect */
 }
 
 nav {
