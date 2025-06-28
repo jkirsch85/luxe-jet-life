@@ -1,0 +1,8 @@
+name = "Luxe Jet Life Custom Theme"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A custom professional Hugo theme for luxury travel content"
+homepage = "https://jkirsch85.github.io/luxe-jet-life/"
+tags = ["blog", "responsive", "travel", "luxury"]
+features = ["posts", "pages", "navigation"]
+min_version = "0.87.0"

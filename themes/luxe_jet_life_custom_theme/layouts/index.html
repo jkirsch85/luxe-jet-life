@@ -1,20 +1,11 @@
 {{ define "main" }}
-<main style="padding: 2rem; font-family: sans-serif;">
+<main>
   <h1>{{ .Title }}</h1>
   <p>Welcome to Luxe Jet Life — your guide to elite travel, flights, hotels, and more.</p>
-
-  {{ if .Site.RegularPages }}
-    <ul>
-      {{ range .Site.RegularPages }}
-        <li style="margin: 10px 0;">
-          <a href="{{ .RelPermalink }}" style="font-weight: bold;">{{ .Title }}</a><br />
-          <span>{{ .Summary }}</span>
-        </li>
-      {{ end }}
-    </ul>
-  {{ else }}
-    <p>No posts found. Add some content under <code>content/posts/</code>.</p>
-  {{ end }}
+  <ul>
+    {{ range .Site.RegularPages }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
 </main>
 {{ end }}
-
