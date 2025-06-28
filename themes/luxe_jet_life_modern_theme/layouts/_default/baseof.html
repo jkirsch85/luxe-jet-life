@@ -8,9 +8,6 @@
   </head>
   <body>
     {{ partial "header.html" . }}
-    <main class="container">
-      {{ block "main" . }}{{ end }}
-    </main>
-    {{ partial "footer.html" . }}
+    {{ block "main" . }}{{ end }}
   </body>
 </html>
